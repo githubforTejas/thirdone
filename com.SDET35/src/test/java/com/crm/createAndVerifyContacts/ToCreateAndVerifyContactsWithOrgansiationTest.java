@@ -55,7 +55,7 @@ public class ToCreateAndVerifyContactsWithOrgansiationTest extends BaseClass {
 		//To check whether the Organization is created or not
 		SoftAssert soft=new SoftAssert();
 		soft.assertTrue(orgTitle.contains(organizationName));
-		System.out.println("Organization is created");
+		System.out.println("Organization is created and verified thoroughly");
 		
 		
 		home.contactsLink();
