@@ -88,7 +88,7 @@ public class ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest extends 
 
 		SoftAssert soft=new SoftAssert();
 		soft.assertTrue(productTitle.contains(productN));
-		System.out.println("Product is created");
+		System.out.println("Product is created and verified");
 		soft.assertAll();
 
 
