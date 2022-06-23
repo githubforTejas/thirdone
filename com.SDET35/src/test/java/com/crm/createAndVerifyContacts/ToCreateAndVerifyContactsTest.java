@@ -41,7 +41,7 @@ public class ToCreateAndVerifyContactsTest extends BaseClass{
 		String email = excel.getValueFromExcel("Contacts",1,4)+randomNum;
 		String mobileNo = excel.getNumericValueFromExcel("Contacts", 1, 5);
 
-		//Click on Contacts link
+		//Click on Contacts link....
 		HomePage home=new HomePage(driver);
 		home.contactsLink();
 
