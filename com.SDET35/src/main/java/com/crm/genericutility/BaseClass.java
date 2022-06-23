@@ -37,11 +37,11 @@ public class BaseClass
 	@BeforeClass(groups={"SmokeTest","regressionTest"})
 	public void launchTheBrowser() throws IOException
 	{
-		//String BROWSER = System.getProperty("browser");
-		//String URL = System.getProperty("url");
+		String BROWSER = System.getProperty("browser");
+		String URL = System.getProperty("url");
 		
-		String BROWSER = file.getPropertyKeyValue("BROWSER");
-		String URL = file.getPropertyKeyValue("URL");
+		//String BROWSER = file.getPropertyKeyValue("BROWSER");
+		//String URL = file.getPropertyKeyValue("URL");
 
 
 		if(BROWSER.equalsIgnoreCase("Firefox"))
