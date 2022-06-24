@@ -193,12 +193,13 @@ Set<String> set = driver.getWindowHandles();
 	 * @throws IOException 
 	 * 
 	 */
-	public void takeScreenshot(WebDriver driver) throws IOException
+	public static String takeScreenshot(WebDriver driver,String screenShotName) throws IOException
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dst = new File("./src/test/resources/Photos/a1.png");
+		File dst = new File("./src/test/resources/Photos/"+screenShotName+".png");
 		Files.copy(src, dst);
+		return screenShotName;
 	}
 	/**
 	 * 

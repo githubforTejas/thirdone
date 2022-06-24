@@ -50,7 +50,8 @@ public class CreateAndVerifyProductsTest extends BaseClass
 		newProduct.productCategory(productCategory);
 		newProduct.manufacturer(manufacturer);
 		newProduct.saveBtn();
-
+Assert.fail();
+		
 		ProductsInfoPage info=new ProductsInfoPage(driver);
 		String productTitle = info.getProduct().getText();
 

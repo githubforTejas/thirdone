@@ -1,44 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="4" ignored="0" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-23T09:15:42 IST" name="Default suite" finished-at="2022-06-23T09:16:39 IST" duration-ms="56913">
+  <suite started-at="2022-06-24T15:48:05 IST" name="Default suite" finished-at="2022-06-24T15:49:32 IST" duration-ms="86368">
     <groups>
       <group name="SmokeTest">
-        <method signature="ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" name="toCreateAndVerifyContactsTest" class="com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest"/>
+        <method signature="CreateAndVerifyProductsTest.createAndVerifyProductsTest()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" name="createAndVerifyProductsTest" class="com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest"/>
       </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2022-06-23T09:15:42 IST" name="Default test" finished-at="2022-06-23T09:16:39 IST" duration-ms="56913">
-      <class name="com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest">
-        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" started-at="2022-06-23T09:15:42 IST" name="connectToDataBase" finished-at="2022-06-23T09:15:42 IST" duration-ms="10" status="PASS">
+    <test started-at="2022-06-24T15:48:05 IST" name="Default test" finished-at="2022-06-24T15:49:32 IST" duration-ms="86368">
+      <class name="com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest">
+        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:05 IST" name="connectToDataBase" finished-at="2022-06-24T15:48:05 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDataBase -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" started-at="2022-06-23T09:15:42 IST" name="launchTheBrowser" finished-at="2022-06-23T09:16:03 IST" duration-ms="20760" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:06 IST" name="launchTheBrowser" finished-at="2022-06-24T15:48:13 IST" duration-ms="7361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" started-at="2022-06-23T09:16:03 IST" name="loginToAppln" finished-at="2022-06-23T09:16:08 IST" duration-ms="5535" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:13 IST" name="loginToAppln" finished-at="2022-06-24T15:48:16 IST" duration-ms="2903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method signature="toCreateAndVerifyContactsTest()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" started-at="2022-06-23T09:16:08 IST" name="toCreateAndVerifyContactsTest" finished-at="2022-06-23T09:16:34 IST" duration-ms="26332" status="PASS">
+        <test-method retried="true" signature="createAndVerifyProductsTest()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:16 IST" name="createAndVerifyProductsTest" finished-at="2022-06-24T15:48:28 IST" duration-ms="11699" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest.createAndVerifyProductsTest(CreateAndVerifyProductsTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toCreateAndVerifyContactsTest -->
-        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" started-at="2022-06-23T09:16:34 IST" name="logOutFromAppln" finished-at="2022-06-23T09:16:37 IST" duration-ms="2342" status="PASS">
+        </test-method> <!-- createAndVerifyProductsTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:28 IST" name="logOutFromAppln" finished-at="2022-06-24T15:48:29 IST" duration-ms="1331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromAppln -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" started-at="2022-06-23T09:16:37 IST" name="closeTheBrowser" finished-at="2022-06-23T09:16:39 IST" duration-ms="1896" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:29 IST" name="loginToAppln" finished-at="2022-06-24T15:48:31 IST" duration-ms="2201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method retried="true" signature="createAndVerifyProductsTest()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:31 IST" name="createAndVerifyProductsTest" finished-at="2022-06-24T15:48:42 IST" duration-ms="10454" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest.createAndVerifyProductsTest(CreateAndVerifyProductsTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndVerifyProductsTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:42 IST" name="logOutFromAppln" finished-at="2022-06-24T15:48:43 IST" duration-ms="1303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromAppln -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:43 IST" name="loginToAppln" finished-at="2022-06-24T15:48:46 IST" duration-ms="2507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method retried="true" signature="createAndVerifyProductsTest()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:46 IST" name="createAndVerifyProductsTest" finished-at="2022-06-24T15:48:56 IST" duration-ms="10584" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest.createAndVerifyProductsTest(CreateAndVerifyProductsTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndVerifyProductsTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:56 IST" name="logOutFromAppln" finished-at="2022-06-24T15:48:57 IST" duration-ms="1291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromAppln -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:48:57 IST" name="loginToAppln" finished-at="2022-06-24T15:49:01 IST" duration-ms="3185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method retried="true" signature="createAndVerifyProductsTest()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:49:01 IST" name="createAndVerifyProductsTest" finished-at="2022-06-24T15:49:12 IST" duration-ms="11413" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest.createAndVerifyProductsTest(CreateAndVerifyProductsTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndVerifyProductsTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:49:12 IST" name="logOutFromAppln" finished-at="2022-06-24T15:49:14 IST" duration-ms="1569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromAppln -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:49:14 IST" name="loginToAppln" finished-at="2022-06-24T15:49:16 IST" duration-ms="2664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="createAndVerifyProductsTest()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:49:16 IST" name="createAndVerifyProductsTest" finished-at="2022-06-24T15:49:28 IST" duration-ms="12156" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest.createAndVerifyProductsTest(CreateAndVerifyProductsTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndVerifyProductsTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:49:29 IST" name="logOutFromAppln" finished-at="2022-06-24T15:49:30 IST" duration-ms="1558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:49:30 IST" name="closeTheBrowser" finished-at="2022-06-24T15:49:32 IST" duration-ms="1388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeTheDataBase()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2805d709]" started-at="2022-06-23T09:16:39 IST" name="closeTheDataBase" finished-at="2022-06-23T09:16:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeTheDataBase()[pri:0, instance:com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest@3e11f9e9]" started-at="2022-06-24T15:49:32 IST" name="closeTheDataBase" finished-at="2022-06-24T15:49:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheDataBase -->
-      </class> <!-- com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest -->
+      </class> <!-- com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
