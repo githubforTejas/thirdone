@@ -26,7 +26,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @Listeners(com.crm.genericutility.ListImplimentation.class)
 public class CreateAndVerifyProductsTest extends BaseClass
 {
-
 	@Test(groups="SmokeTest",retryAnalyzer = com.crm.genericutility.RetryAnalyserImp.class)
 	public void createAndVerifyProductsTest() throws IOException {
 
@@ -50,7 +49,7 @@ public class CreateAndVerifyProductsTest extends BaseClass
 		newProduct.productCategory(productCategory);
 		newProduct.manufacturer(manufacturer);
 		newProduct.saveBtn();
-Assert.fail();
+
 		
 		ProductsInfoPage info=new ProductsInfoPage(driver);
 		String productTitle = info.getProduct().getText();

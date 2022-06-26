@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -22,7 +23,7 @@ import com.crm.objectRepository.HomePage;
 import com.crm.objectRepository.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.crm.genericutility.ListImplimentation.class)
 public class ToCreateAndVerifyContactsTest extends BaseClass{
 
 	@Test(groups="SmokeTest",retryAnalyzer = com.crm.genericutility.RetryAnalyserImp.class)

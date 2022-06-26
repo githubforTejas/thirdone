@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -15,7 +16,7 @@ import com.crm.objectRepository.CreateNewOrganizationPage;
 import com.crm.objectRepository.HomePage;
 import com.crm.objectRepository.OrganizationInfoPage;
 import com.crm.objectRepository.OrganizationsPage;
-
+@Listeners(com.crm.genericutility.ListImplimentation.class)
 public class ToCreateAndVerifyContactsWithOrgansiationTest extends BaseClass {
 	@Test(groups="SmokeTest",retryAnalyzer = com.crm.genericutility.RetryAnalyserImp.class)
 	public void toCreateAndVerifyContactsWithOrgansiationTest() throws IOException {

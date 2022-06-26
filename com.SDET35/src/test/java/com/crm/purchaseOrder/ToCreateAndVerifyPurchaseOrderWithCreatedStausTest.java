@@ -22,6 +22,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -42,7 +43,7 @@ import com.crm.objectRepository.VendorsInfoPage;
 import com.crm.objectRepository.VendorsPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.crm.genericutility.ListImplimentation.class)
 public class ToCreateAndVerifyPurchaseOrderWithCreatedStausTest extends BaseClass {
 	@Test(groups="regressionTest",retryAnalyzer = com.crm.genericutility.RetryAnalyserImp.class)
 	public void tocreateAndVerifyPurchaseOrderWithCreatedStatusTest() throws EncryptedDocumentException, IOException {

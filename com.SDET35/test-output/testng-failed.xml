@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest">
+      <class name="com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest">
         <methods>
+          <include name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest"/>
           <include name="connectToDataBase"/>
           <include name="logOutFromAppln"/>
           <include name="loginToAppln"/>
           <include name="closeTheDataBase"/>
           <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
-          <include name="createAndVerifyProductsTest"/>
         </methods>
-      </class> <!-- com.crm.createAndVerifyProducts.CreateAndVerifyProductsTest -->
+      </class> <!-- com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
