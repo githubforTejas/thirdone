@@ -33,7 +33,7 @@ public class ToCreateAndVerifyContactsTest extends BaseClass{
 		//(Hey hi Boss, is everything fine ?,how is the life )
 		int randomNum = java.getRandomNumber();
 
-		//to get the data from excel
+		//to get the data from excel(Sagar)
 		String mr = excel.getValueFromExcel("Contacts",2,10);
 		String firstName = excel.getValueFromExcel("Contacts",1,2)+randomNum; 
 		String lastName = excel.getValueFromExcel("Contacts",1,3)+randomNum;

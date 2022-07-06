@@ -7,7 +7,7 @@ public class RetryAnalyserImp implements IRetryAnalyzer{
 
 	int count=0;
 	int retrylimit=4;
-	
+
 	public boolean retry(ITestResult result)
 	{
 		if(count<retrylimit)
@@ -15,14 +15,14 @@ public class RetryAnalyserImp implements IRetryAnalyzer{
 			count++;
 			return true;
 		}
-	return false;
+		return false;
+	}
+
 }
-	
-}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 

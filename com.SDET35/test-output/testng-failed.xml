@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.crm.genericutility.ListImplimentation"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest">
+      <class name="com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest">
         <methods>
-          <include name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest"/>
           <include name="connectToDataBase"/>
           <include name="logOutFromAppln"/>
+          <include name="createAndVerifyOrganizationTest"/>
           <include name="loginToAppln"/>
           <include name="closeTheDataBase"/>
           <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
         </methods>
-      </class> <!-- com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
+      </class> <!-- com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

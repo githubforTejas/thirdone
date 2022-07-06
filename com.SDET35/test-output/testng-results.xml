@@ -1,37 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="4" ignored="0" total="5" passed="0" failed="1" skipped="0">
+<testng-results retried="4" ignored="2" total="8" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-24T17:06:42 IST" name="Default suite" finished-at="2022-06-24T17:09:47 IST" duration-ms="184784">
+  <suite started-at="2022-06-29T22:45:35 IST" name="Suite" finished-at="2022-06-29T22:46:29 IST" duration-ms="54623">
     <groups>
-      <group name="regressionTest">
-        <method signature="ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest" class="com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest"/>
-      </group> <!-- regressionTest -->
+      <group name="SmokeTest">
+        <method signature="CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" name="createAndVerifyOrganizationTest" class="com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest"/>
+        <method signature="ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" name="toCreateAndVerifyContactsTest" class="com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest"/>
+      </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2022-06-24T17:06:42 IST" name="Default test" finished-at="2022-06-24T17:09:47 IST" duration-ms="184784">
-      <class name="com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest">
-        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:06:42 IST" name="connectToDataBase" finished-at="2022-06-24T17:06:42 IST" duration-ms="13" status="PASS">
+    <test started-at="2022-06-29T22:45:35 IST" name="Test" finished-at="2022-06-29T22:46:29 IST" duration-ms="54623">
+      <class name="com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest">
+        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" started-at="2022-06-29T22:45:35 IST" name="connectToDataBase" finished-at="2022-06-29T22:45:35 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDataBase -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:06:43 IST" name="launchTheBrowser" finished-at="2022-06-24T17:06:51 IST" duration-ms="8564" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" started-at="2022-06-29T22:45:35 IST" name="launchTheBrowser" finished-at="2022-06-29T22:45:44 IST" duration-ms="8299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:06:51 IST" name="loginToAppln" finished-at="2022-06-24T17:06:54 IST" duration-ms="2682" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" started-at="2022-06-29T22:45:44 IST" name="loginToAppln" finished-at="2022-06-29T22:45:47 IST" duration-ms="3221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method retried="true" signature="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:06:54 IST" name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest" finished-at="2022-06-24T17:07:24 IST" duration-ms="30144" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="toCreateAndVerifyContactsTest()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" started-at="2022-06-29T22:45:47 IST" name="toCreateAndVerifyContactsTest" finished-at="2022-06-29T22:46:08 IST" duration-ms="20907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCreateAndVerifyContactsTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" started-at="2022-06-29T22:46:08 IST" name="logOutFromAppln" finished-at="2022-06-29T22:46:11 IST" duration-ms="3058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" started-at="2022-06-29T22:46:11 IST" name="closeTheBrowser" finished-at="2022-06-29T22:46:13 IST" duration-ms="1875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="closeTheDataBase()[pri:0, instance:com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761]" started-at="2022-06-29T22:46:30 IST" name="closeTheDataBase" finished-at="2022-06-29T22:46:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheDataBase -->
+      </class> <!-- com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest -->
+      <class name="com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:13 IST" name="launchTheBrowser" finished-at="2022-06-29T22:46:20 IST" duration-ms="6798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:20 IST" name="loginToAppln" finished-at="2022-06-29T22:46:22 IST" duration-ms="2975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method retried="true" signature="createAndVerifyOrganizationTest()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:22 IST" name="createAndVerifyOrganizationTest" finished-at="2022-06-29T22:46:28 IST" duration-ms="5611" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//img[@title='Create Organization...']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest(ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.java:167)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//img[@title='Create Organization...']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.crm.objectRepository.OrganizationsPage.createOrganizationLookUpImg(OrganizationsPage.java:27)
+at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,28 +118,173 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
-        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:07:24 IST" name="logOutFromAppln" finished-at="2022-06-24T17:07:26 IST" duration-ms="1314" status="PASS">
+        </test-method> <!-- createAndVerifyOrganizationTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:28 IST" name="logOutFromAppln" finished-at="2022-06-29T22:46:28 IST" duration-ms="100" status="FAIL">
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
+at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+at org.openqa.selenium.json.Json.toJson(Json.java:42)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+at com.crm.genericutility.WebDriverUtility.mouseHoverOnElement(WebDriverUtility.java:172)
+at com.crm.objectRepository.HomePage.administration(HomePage.java:107)
+at com.crm.genericutility.BaseClass.logOutFromAppln(BaseClass.java:86)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+at org.openqa.selenium.json.Json.toJson(Json.java:44)
+... 44 more
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+... 56 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//img[@src='themes/softed/images/user.PNG']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
+at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+... 61 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromAppln -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:07:26 IST" name="loginToAppln" finished-at="2022-06-24T17:07:28 IST" duration-ms="2131" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:28 IST" name="loginToAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522988712" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method retried="true" signature="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:07:28 IST" name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest" finished-at="2022-06-24T17:07:59 IST" duration-ms="31720" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method retried="true" signature="createAndVerifyOrganizationTest()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:28 IST" name="createAndVerifyOrganizationTest" finished-at="2022-06-29T22:46:29 IST" duration-ms="395" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest(ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.java:167)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,28 +315,57 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
-        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:07:59 IST" name="logOutFromAppln" finished-at="2022-06-24T17:08:01 IST" duration-ms="1534" status="PASS">
+        </test-method> <!-- createAndVerifyOrganizationTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="logOutFromAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989116" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromAppln -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:08:01 IST" name="loginToAppln" finished-at="2022-06-24T17:08:03 IST" duration-ms="2589" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="loginToAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989132" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method retried="true" signature="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:08:03 IST" name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest" finished-at="2022-06-24T17:08:33 IST" duration-ms="29140" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method retried="true" signature="createAndVerifyOrganizationTest()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="createAndVerifyOrganizationTest" finished-at="2022-06-29T22:46:29 IST" duration-ms="233" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest(ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.java:167)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,28 +396,57 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
-        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:08:33 IST" name="logOutFromAppln" finished-at="2022-06-24T17:08:34 IST" duration-ms="1427" status="PASS">
+        </test-method> <!-- createAndVerifyOrganizationTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="logOutFromAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989381" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromAppln -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:08:34 IST" name="loginToAppln" finished-at="2022-06-24T17:08:37 IST" duration-ms="2624" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="loginToAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989384" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method retried="true" signature="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:08:37 IST" name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest" finished-at="2022-06-24T17:09:09 IST" duration-ms="32578" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method retried="true" signature="createAndVerifyOrganizationTest()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="createAndVerifyOrganizationTest" finished-at="2022-06-29T22:46:29 IST" duration-ms="187" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest(ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.java:167)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -218,28 +477,57 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
-        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:09:09 IST" name="logOutFromAppln" finished-at="2022-06-24T17:09:11 IST" duration-ms="1578" status="PASS">
+        </test-method> <!-- createAndVerifyOrganizationTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="logOutFromAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989576" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromAppln -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:09:11 IST" name="loginToAppln" finished-at="2022-06-24T17:09:14 IST" duration-ms="2664" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="loginToAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989577" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method signature="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:09:14 IST" name="toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest" finished-at="2022-06-24T17:09:44 IST" duration-ms="30659" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="createAndVerifyOrganizationTest()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="createAndVerifyOrganizationTest" finished-at="2022-06-29T22:46:29 IST" duration-ms="191" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest(ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest.java:167)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IPNI0DB', ip: '192.168.42.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.='Organizations']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -270,23 +558,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
-        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:09:44 IST" name="logOutFromAppln" finished-at="2022-06-24T17:09:46 IST" duration-ms="1298" status="PASS">
+        </test-method> <!-- createAndVerifyOrganizationTest -->
+        <test-method is-config="true" signature="logOutFromAppln()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="logOutFromAppln" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989906" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromAppln -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:09:46 IST" name="closeTheBrowser" finished-at="2022-06-24T17:09:47 IST" duration-ms="1425" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a]" started-at="2022-06-29T22:46:29 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1656522989912" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeTheDataBase()[pri:0, instance:com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest@32502377]" started-at="2022-06-24T17:09:48 IST" name="closeTheDataBase" finished-at="2022-06-24T17:09:48 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheDataBase -->
-      </class> <!-- com.crm.purchaseOrder.ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

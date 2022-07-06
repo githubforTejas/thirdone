@@ -166,13 +166,6 @@ public class ToCreateAndVerifyPurchaseOrderAndSelectUserRadioButtonTest extends 
 		System.out.println("Purchase order is created");
 		Assert.fail();
 		soft.assertAll();
-
-
-
-
-
-
-
 	}
 
 }

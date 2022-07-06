@@ -26,21 +26,21 @@ import com.google.common.io.Files;
  *
  */
 public class WebDriverUtility {
-public void WaitForPageToLoad(WebDriver driver)
-{
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-}
-/**
- * it will check for the element in the GUI for polling time of 500ms
- */
-public void WaitForElementTOBeClickable(WebDriver driver,WebElement element)
-{
-	WebDriverWait wait=new WebDriverWait(driver,10);
-	wait.until(ExpectedConditions.elementToBeClickable(element));			
-}
-/**
- * it will check for the title in the GUI for polling time of 500ms
- */
+	public void WaitForPageToLoad(WebDriver driver)
+	{
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	/**
+	 * it will check for the element in the GUI for polling time of 500ms
+	 */
+	public void WaitForElementTOBeClickable(WebDriver driver,WebElement element)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.elementToBeClickable(element));			
+	}
+	/**
+	 * it will check for the title in the GUI for polling time of 500ms 
+	 */
 	public void waitForTitleContains(WebDriver driver,String title)
 	{
 		WebDriverWait wait=new WebDriverWait(driver,10);
@@ -80,19 +80,19 @@ public void WaitForElementTOBeClickable(WebDriver driver,WebElement element)
 	 */
 	public void switchToWindow(WebDriver driver,String partialWindow)
 	{
-Set<String> set = driver.getWindowHandles();
-	Iterator<String> it = set.iterator();
-	while(it.hasNext())
-	{
-		String ele = it.next();
-		driver.switchTo().window(ele);
-		String currentWindow = driver.getTitle();
-		if(currentWindow.contains(partialWindow))
+		Set<String> set = driver.getWindowHandles();
+		Iterator<String> it = set.iterator();
+		while(it.hasNext())
 		{
-			break;
+			String ele = it.next();
+			driver.switchTo().window(ele);
+			String currentWindow = driver.getTitle();
+			if(currentWindow.contains(partialWindow))
+			{
+				break;
+			}
 		}
 	}
-}
 	/**
 	 * switch from one frame to another frame using index
 	 */
@@ -175,11 +175,11 @@ Set<String> set = driver.getWindowHandles();
 	 * it is used to right click on the element
 	 * @param driver
 	 */
-	public void rightClickOnTheElement(WebDriver driver)
+	public void rightClickOnTheElement(WebDriver driver,WebElement element)
 	{
 		Actions action=new Actions(driver);
-		action.contextClick().perform();
-		
+		action.contextClick(element).perform();
+
 	}
 	/**
 	 * it is used to click on enter button using keyboard

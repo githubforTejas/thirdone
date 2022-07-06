@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/8</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/4</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 18 15:22:55 IST 2022</td>
+<td>Started on:</td><td>Wed Jun 29 22:45:35 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55339 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54623 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,99 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.genericutility.BaseClass.logOutFromAppln(BaseClass.java:83)
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
+<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at com.crm.genericutility.WebDriverUtility.mouseHoverOnElement(WebDriverUtility.java:172)
+	at com.crm.objectRepository.HomePage.administration(HomePage.java:107)
+	at com.crm.genericutility.BaseClass.logOutFromAppln(BaseClass.java:86)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace564143446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace564143446'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.genericutility.BaseClass.logOutFromAppln(BaseClass.java:83)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 44 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 56 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 61 more
+... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1085041526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1085041526'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at com.crm.genericutility.WebDriverUtility.mouseHoverOnElement(WebDriverUtility.java:172)
+	at com.crm.objectRepository.HomePage.administration(HomePage.java:107)
+	at com.crm.genericutility.BaseClass.logOutFromAppln(BaseClass.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -123,61 +201,53 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.genericutility.BaseClass.logOutFromAppln(BaseClass.java:83)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243227501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1243227501'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.genericutility.BaseClass.logOutFromAppln(BaseClass.java:83)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 44 more
+Caused by: java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 56 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//img[@src=&apos;themes/softed/images/user.PNG&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 61 more
 </pre></div></td>
 <td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -187,95 +257,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546029</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>-1656522988</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546030</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546009</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546012</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546028</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.closeTheBrowser()'><b>closeTheBrowser</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546030</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546011</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.closeTheBrowser()'><b>closeTheBrowser</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546027</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
 <td></td>
-<td>-1655546011</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td></td>
-<td>-1655546028</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td></td>
-<td>-1655546008</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td></td>
-<td>-1655546008</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td></td>
-<td>-1655546009</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td></td>
-<td>-1655546007</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.loginToAppln()'><b>loginToAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td></td>
-<td>-1655546028</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td></td>
-<td>-1655546028</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.logOutFromAppln()'><b>logOutFromAppln</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td></td>
-<td>-1655546029</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.closeTheBrowser()'><b>closeTheBrowser</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td></td>
-<td>-1655546012</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
+<td>-1656522989</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -285,21 +310,58 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()'><b>toCreateAndVerifyContactsTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest()'><b>createAndVerifyOrganizationTest</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace129958347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace129958347'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1096742104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1096742104'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -330,54 +392,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest()'><b>toCreateAndVerifyContactsWithOrgansiationTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace945683299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace945683299'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()'><b>toCreateAndVerifyContactsTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
+<td></td>
+<td>20</td>
+<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@31fa1761</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -387,115 +415,58 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()'><b>toCreateAndVerifyContactsTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest()'><b>createAndVerifyOrganizationTest</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1245434971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1245434971'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest()'><b>toCreateAndVerifyContactsWithOrgansiationTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503427379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace503427379'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest()'><b>toCreateAndVerifyContactsWithOrgansiationTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1506083063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1506083063'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace40910225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40910225'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -526,164 +497,60 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()'><b>toCreateAndVerifyContactsTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest()'><b>createAndVerifyOrganizationTest</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//img[@title=&apos;Create Organization...&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.OrganizationsPage.createOrganizationLookUpImg(OrganizationsPage.java:27)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1609509548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1609509548'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest()'><b>toCreateAndVerifyContactsWithOrgansiationTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1139817507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1139817507'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()'><b>toCreateAndVerifyContactsTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2034046523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2034046523'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
-<tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()'><b>toCreateAndVerifyContactsTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace678787773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace678787773'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest(ToCreateAndVerifyContactsTest.java:44)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace994584048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace994584048'><pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//img[@title=&apos;Create Organization...&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.OrganizationsPage.createOrganizationLookUpImg(OrganizationsPage.java:27)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -713,32 +580,69 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsTest@2ea41516</td></tr>
+<td>5</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 <tr>
-<td title='com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest()'><b>toCreateAndVerifyContactsWithOrgansiationTest</b><br>Test class: com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest()'><b>createAndVerifyOrganizationTest</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace970900790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace970900790'><pre>java.lang.Error: Unresolved compilation problems: 
-	Syntax error on token &quot;t&quot;, invalid Modifiers
-	Syntax error, type annotations are available only when source level is at least 1.8
-
-	at com.crm.objectRepository.HomePage.&lt;init&gt;(HomePage.java:34)
-	at com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest.toCreateAndVerifyContactsWithOrgansiationTest(ToCreateAndVerifyContactsWithOrgansiationTest.java:41)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace840737335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace840737335'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -760,8 +664,92 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>com.crm.createAndVerifyContacts.ToCreateAndVerifyContactsWithOrgansiationTest@316bcf94</td></tr>
+<td>0</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
+<tr>
+<td title='com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest()'><b>createAndVerifyOrganizationTest</b><br>Test class: com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace500985266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace500985266'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IPNI0DB&apos;, ip: &apos;192.168.42.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220608170832, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1624, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67262561-efd6-4397-ab05-263190004c61
+*** Element info: {Using=xpath, value=//a[.=&apos;Organizations&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.crm.objectRepository.HomePage.organizationsLink(HomePage.java:72)
+	at com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest.createAndVerifyOrganizationTest(CreateAndVerifyOrganizationTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crm.createAndVerifyOrganization.CreateAndVerifyOrganizationTest@7bab3f1a</td></tr>
 </table><p>
 </body>
 </html>
